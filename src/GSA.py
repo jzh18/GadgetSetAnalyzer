@@ -113,7 +113,7 @@ else:
         file_2_lines.append(orig_counts)
 
         # Output file #3: SP Gadget Counts + Introduction
-        file_3_lines = ["Special Purpose Gadget Counts + Introduction" + LINE_SEP,
+        file_3_lines = [
                         "Package Variant,Syscall Gadgets,JOP Dispatcher Gadgets,JOP Dataloader Gadgets,JOP Initializers,JOP Trampolines,COP Dispatcher Gadgets,COP Dataloader Gadgets,COP Initializers,COP Strong Trampoline Gadgets,COP Intra-stack Pivot Gadgets" + LINE_SEP]
         orig_counts = original.name + "," + str(len(original.SyscallGadgets))
         orig_counts = orig_counts + "," + str(len(original.JOPDispatchers))
@@ -128,7 +128,7 @@ else:
         file_3_lines.append(orig_counts)
 
         # Output File 4: Special Purpose Gadget Introduction Counts/Rates
-        file_4_lines = ["Special Purpose Gadget Introduction Data" + LINE_SEP,
+        file_4_lines = [
                         "Package Variant,Syscall Gadgets,Syscall Gadget Introduction Rate," +
                         "JOP Dispatcher Gadgets,JOP Dispatcher Gadget Introduction Rate," +
                         "JOP Dataloader Gadgets,JOP Dataloader Gadget Introduction Rate," +
